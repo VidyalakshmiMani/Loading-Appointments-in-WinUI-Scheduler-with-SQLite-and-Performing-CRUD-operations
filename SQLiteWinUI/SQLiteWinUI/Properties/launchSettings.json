@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SQLiteWinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SQLiteWinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

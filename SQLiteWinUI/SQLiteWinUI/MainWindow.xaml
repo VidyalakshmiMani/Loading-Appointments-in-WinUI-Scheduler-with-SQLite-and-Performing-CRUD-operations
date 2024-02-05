@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="SQLiteWinUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SQLiteWinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid x:Name="grid">
+        <Grid.DataContext>
+            <local:SchedulerViewModel/>
+        </Grid.DataContext>
+        <scheduler:SfScheduler x:Name="Scheduler"  ViewType="Week"  AppointmentEditorClosing="Scheduler_AppointmentEditorClosing"
+                           AllowedViewTypes="Day,Week,WorkWeek,Month,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth"
+                           ItemsSource="{Binding Appointments}">
+
+        </scheduler:SfScheduler>
+    </Grid>
+</Window>
