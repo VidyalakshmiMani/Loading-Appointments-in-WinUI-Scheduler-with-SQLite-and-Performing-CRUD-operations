@@ -43,7 +43,7 @@ namespace SQLiteWinUI
             {
                 if (database == null)
                 {
-                     database = new SchedulerDatabase(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WPFSchedulerDatabase5.db3"));
+                     database = new SchedulerDatabase(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WPFSchedulerDatabase.db3"));
                 }
                 return database;
             }
