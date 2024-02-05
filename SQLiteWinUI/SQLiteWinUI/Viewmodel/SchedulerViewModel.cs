@@ -97,10 +97,7 @@ namespace SQLiteWinUI
         }
         internal void DeleteSchedulerAppointment(ScheduleAppointment scheduleAppointment)
         {
-            if (appointment == null)
-            {
-                appointment = scheduleAppointment;
-            }
+            appointment = scheduleAppointment;
 
             //// Remove the appointments in the Scheduler.
             Appointments.Remove(this.appointment);
